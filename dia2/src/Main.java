@@ -340,6 +340,138 @@ public class Main {
 //        }else if (qua >= 40 && qua <= 51) {
 //            System.out.println(qua + "= F");
 //        }
+//Ejercicio 16: Contraseña segura
+
+//        System.out.println("Ingrese su contraseña ");
+//        String password = sc.nextLine();
+
+//    }
+//
+//    public static boolean checkPassword(String password) {
+//        if (password.length() < 8) {
+//            return false;
+//
+//        } else {
+//            System.out.println("La contraseña debe tener al menos 8 caracteres");
+//        }
+//        boolean mayuscula = false;
+//        boolean minuscula = false;
+//        boolean especial = false;
+//
+//        for (char character : password.toCharArray()) {
+//            if (Character.isUpperCase(character)) {
+//                mayuscula = true;
+//            } else System.out.println("La contraseña debe contener por lo menos una letra mayuscula");
+//            if (Character.isLowerCase(character)) {
+//                minuscula = true;
+//            } else {
+//                System.out.println("La conraseña debe contener por lo menos una letra minuscula");
+//            }
+//            if ("!@#$%^&*()-_=+[]{}|;:,.<>?".indexOf(character) != -1) {
+//                especial = true;
+//            }
+//        }
+//        if (mayuscula && minuscula && especial) {
+//            System.out.println("¡La contraseña es segura!");
+//        } else {
+//            System.out.println("La contraseña no cumple con los requisitos mínimos de seguridad.");
+//        }
+//
+//
+//    }
+//}
+//Ejercicio 17: Identificador de carácter
+//        System.out.println("Ingrese un caracter ");
+//        char caracter = sc.next().charAt(0);
+//        if("aeiouAEIOU".indexOf(caracter) != -1){
+//            System.out.println(caracter+" es vocal");
+//        }else if("!@#$%^&*()-_=+[]{}|;:,.<>?".indexOf(caracter) != -1){
+//            System.out.println(caracter+" es un caracter especial");
+//        }else if("BCDFGHJKLMNPQRSTUVWXYZbcdfghjklmnpqrstvwxyz".indexOf(caracter) != -1){
+//            System.out.println(caracter+" es una consonate");
+//        }else{
+//            System.out.println(caracter+" no es un caracter permintido");
+//        }
+        //Ejercicio 18: Juego de piedra, papel o tijera:
+//        System.out.println("Ingresa tu eleccion entre:\n Piedra:1 \n Papel:2 \n Tijera:3");
+//        int usuario = sc.nextInt();
+//        int computador = (Math.random(1,2,3));
+//if (usuario == computador) {
+//System.out.println("Es un empate");}
+//else if (usuario == 1 && computador == 2) {
+//    System.out.println("El ganador es el computador");
+//}else if(usuario == 2 && computador == 3) {
+//    System.out.println("El ganador es el computador");
+//}else if(usuario == 3 && computador == 1) {
+//    System.out.println("El ganador es el computador");
+//}else{
+//    System.out.println("El ganador es el usuario");
+//}
+//
+// Ejercicio 19: Calculadora de edad:
+//        System.out.println("ingrese su año de nacimiento: ");
+//        int anio = sc.nextInt();
+//        System.out.println("ingrese su mes de nacimiento: ");
+//        int mes = sc.nextInt();
+//        System.out.println("ingrese su dia de nacimiento: ");
+//        int dia = sc.nextInt();
+//        System.out.println("ingrese año actual ");
+//        int anioActual = sc.nextInt();
+//        System.out.println("ingrese mes actual ");
+//        int mesActual = sc.nextInt();
+//        System.out.println("ingrese que dia es hoy ");
+//        int diaActual = sc.nextInt();
+//        int edad = anioActual-anio;
+//        if(mesActual >= mes && diaActual >= dia){
+//            System.out.println("su edad es: "+ edad);
+//            if(edad >= 18){
+//                System.out.println("y usted es mayor de edad");
+//            }else{System.out.println("y usted es menor de edad");}
+//        }else{
+//            System.out.println("su edad es: "+ (edad-1));
+//            if((edad-1) >= 18){
+//                System.out.println("y usted es mayor de edad");
+//            }else{System.out.println("y usted es menor de edad");}
+//        }
+
+//        class CifradoCesar {
+//
+//            public static String cifrar(String mensaje, int desplazamiento) {
+//                StringBuilder resultado = new StringBuilder();
+//
+//                for (int i = 0; i < mensaje.length(); i++) {
+//                    char caracter = mensaje.charAt(i);
+//
+//                    if (Character.isLetter(caracter)) {
+//                        char inicio = Character.isUpperCase(caracter) ? 'A' : 'a';
+//                        char cifrado = (char) (((caracter - inicio + desplazamiento) % 26) + inicio);
+//                        resultado.append(cifrado);
+//                    } else {
+//                        resultado.append(caracter);
+//                    }
+//                }
+//
+//                return resultado.toString();
+//            }
+//
+//            public static String descifrar(String mensaje, int desplazamiento) {
+//
+//                return cifrar(mensaje, -desplazamiento);
+//            }
+//
+//            public static void main(String[] args) {
+//                String mensajeOriginal = "Hola Mundo!";
+//                int desplazamiento = 3;
+
+
+//                String mensajeCifrado = cifrar(mensajeOriginal, desplazamiento);
+//                System.out.println("Mensaje cifrado: " + mensajeCifrado);
+//
+//
+//                String mensajeDescifrado = descifrar(mensajeCifrado, desplazamiento);
+//                System.out.println("Mensaje descifrado: " + mensajeDescifrado);
+//            }
+//        }
         sc.close();
 }
 }
