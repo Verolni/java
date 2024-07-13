@@ -472,6 +472,291 @@ public class Main {
 //                System.out.println("Mensaje descifrado: " + mensajeDescifrado);
 //            }
 //        }
+//taller Arrays
+        //Ejercicio 1: Menú interactivo.
+//        int operacion;
+//        do {
+//
+//
+//            System.out.println("¿Qué operación deseas realizar?\n suma:1 \n resta:2 \n multiplicacion:3 \n division:4 \n ninguna:5");
+//             operacion = sc.nextInt();
+//            switch (operacion) {
+//                case 1:
+//
+//                    System.out.println("ingresa el primer numero a sumar: ");
+//                    int num1 = sc.nextInt();
+//                    System.out.println("ingresa el segundo numero a sumar: ");
+//                    int num2 = sc.nextInt();
+//                    int suma = num1 + num2;
+//                    System.out.println("La suma es: " + suma);
+//                    break;
+//                    case 2:
+//                        System.out.println("ingresa el primer numero a restar: ");
+//                        int num3 = sc.nextInt();
+//                        System.out.println("ingresa el segundo numero a restar: ");
+//                        int num4 = sc.nextInt();
+//                        int resta = num3 - num4;
+//                        System.out.println("La suma es: " + resta);
+//                        break;
+//                        case 3:
+//                            System.out.println("ingresa el primer numero a multiplicar: ");
+//                            int num5 = sc.nextInt();
+//                            System.out.println("ingresa el segundo numero a multiplicar: ");
+//                            int num6 = sc.nextInt();
+//                            int multiplicacion = num5 * num6;
+//                            System.out.println("La multiplicacion es: " + multiplicacion);
+//                            break;
+//                        case 4:
+//                                System.out.println("ingresa el primer numero a division: ");
+//                                int num7 = sc.nextInt();
+//                                System.out.println("ingresa el segundo numero a division: ");
+//                                int num8 = sc.nextInt();
+//                                int division = num7 / num8;
+//                                System.out.println("La division es: " + division);
+//                                break;
+//                                case 5:
+//                                    System.out.println("fin de la operación");
+//                                    break;
+//                default:
+//                    System.out.println("Opción no valida");
+//
+//            }
+//
+//
+//        }while(operacion!= 5);
+//
+//
+
+        //Ejercicio 2: Facturación de una tienda.
+
+
+//        int agregar= 1;
+//        while (agregar != 2) {
+//            System.out.println("agregar producto:\n si:1 \n no:2 ");
+//            agregar = sc.nextInt();
+//            if (agregar == 1) {
+//                System.out.println("Menú: \n 1: leche - 5000\n" +
+//                        "2: pan - 4500\n" +
+//                        "3: huevos - 3000\n" +
+//                        "4: aceite - 7000\n"
+//                        );
+//
+//                    String mercado[] = {"null","Leche", "Pan", "Docena de huevos"
+//                    };
+//                    int precio[] = {0,5000,4500,3000,7000
+//                    };
+//
+//                    System.out.println("Ingrese el numero de tu producto: ");
+//                    int producto = sc.nextInt();
+//                    int[] cantidad = new int[mercado.length];
+//                        String[] compra;
+//                        int total = 0;
+//                        int prod = producto;
+//                        for (int i = prod ; i < mercado.length;i++ ) {
+//
+//                            System.out.print("Ingrese la cantidad de " + mercado[i] + " que desea comprar: ");
+//                            cantidad[i] = sc.nextInt();
+//                            total += (cantidad[i] * precio[i]);
+//                            System.out.println("¿Agregar otro producto?\n si:1 \n no:2 ");
+//                            agregar = sc.nextInt();
+//                            if (agregar == 1) {
+//                                System.out.println("Ingrese el numero de producto: ");
+//                                prod = sc.nextInt();
+//                            } else if (agregar == 2) {
+//                                System.out.println("total de la facturacion: " + total);
+//                                break;
+//                            }
+//                        }
+//
+//                }
+//            }
+
+        //Ejercicio 3: Notas de un curso.
+
+//       System.out.println("¿cuantas calificaciones tienes en este curso? ");
+//       int cuantas = sc.nextInt();
+//        int faltan = 8-cuantas;
+//        int noFaltan = 8-faltan;
+//        double calificaciones[] = new double[cuantas];
+//        for( int i = 0 ; i < calificaciones.length ; i++ ){
+//            System.out.print("Ingrese la calificación: ");
+//            double calificacion = sc.nextInt();
+//            calificaciones[i] = calificacion;
+//
+//        }
+//        double suma= 0;
+//        for( int i = 0 ; i < calificaciones.length ; i++ ){
+//            System.out.print(calificaciones[i] +  ", " );
+//            suma += calificaciones[i];
+//            double promedio = suma/8;
+//            System.out.println("su promedio hasta ahora es: " + promedio);
+//
+//        }
+//        double calfal = (608-suma);
+//        double need = calfal/faltan;
+//        System.out.println("faltan "+faltan+" calificaciones minimo de "+need+" cada una para el promedio minimo de 76");
+
+        //Ejercicio 4: Calculadora de descuentos.
+//        System.out.println("ingrese total de la factura: ");
+//        int total = sc.nextInt();
+//        double totalDesc1 = total-(total*0.25);
+//        double totalDesc2 = total-(total*0.2);
+//        double totalDesc3 = total-(total*0.15);
+//        double totalDesc4 = total-(total*0.1);
+//        if(total >= 1000) {
+//            System.out.println("El total de la factura es: "+ totalDesc1);
+//
+//        } else if (total >= 500 && total < 1000) {
+//            System.out.println("El total de la factura es: "+ totalDesc2);
+//        }else if (total >= 300 && total < 500) {
+//            System.out.println("El total de la factura es: 1"+ totalDesc3);
+//        }else if (total >= 200 && total < 300) {
+//            System.out.println("El total de la factura es: 2"+ totalDesc4);
+//        } else if (total < 200) {
+//            System.out.println("El total de la factura es: "+ total);
+//        }
+
+        //Ejercicio 5: Busca palabras.
+
+//        System.out.println("ingresa tu texto: ");
+//        String texto = sc.nextLine().toLowerCase();
+//        System.out.print("que palabra quieres revisar?: ");
+//        String palabra = sc.nextLine().toLowerCase();
+//        boolean existe = false;
+//
+//        for (int i = 0; i < texto.length() - palabra.length(); i++) {
+//            String subcadena = texto.substring(i, i + palabra.length());
+//            if (subcadena.equals(palabra)) {
+//                existe = true;
+//
+//            }
+//            }
+//        if(existe){
+//            System.out.println(palabra+" si existe en el texto "+ texto);
+//        }else {
+//            System.out.println(palabra+" no existe en el texto "+ texto);
+//        }
+
+        //Ejercicio 6: Búsqueda por coincidencia en arrays
+
+
+//        String nombres[] = {"rafael", "veronica", "alfonso", "patricia", "fanny"};
+//        System.out.print("que palabra quieres revisar?: ");
+//        String nombre = sc.nextLine().toLowerCase();
+//        boolean existe = false;
+//
+//
+//        for (int i = 0; i < nombres.length;i++) {
+//            if (nombres[i].equalsIgnoreCase(nombre)) {
+//                i += 1;
+//                existe = true;
+//            }else{ System.out.println(nombre + " no fue encontrado en la posicion "+ i );
+//            continue;}
+//
+//            if (existe) {
+//                System.out.println(nombre + " si existe en el array " );
+//                break;
+//            }
+//
+//        }
+
+
+        //Ejercicio 7: Transposición de una Matriz
+
+//                System.out.print("Ingresa el número de filas de la matriz: ");
+//                int filas = sc.nextInt();
+//
+//                System.out.print("Ingresa el número de columnas de la matriz: ");
+//                int columnas = sc.nextInt();
+//
+//                int[][] matriz = new int[filas][columnas];
+//
+//                System.out.println("Ingresa los elementos de la matriz:");
+//                for (int i = 0; i < filas; i++) {
+//                    for (int j = 0; j < columnas; j++) {
+//                        System.out.print("Matriz[" + i + "][" + j + "]: ");
+//                        matriz[i][j] = sc.nextInt();
+//                    }
+//                }
+//
+//                System.out.println("\nMatriz original:");
+//                imprimirMatriz(matriz);
+//
+//                int[][] matrizTranspuesta = calcularTranspuesta(matriz);
+//
+//                System.out.println("\nMatriz transpuesta:");
+//                imprimirMatriz(matrizTranspuesta);
+//
+//            }
+//
+//            public static int[][] calcularTranspuesta(int[][] matriz) {
+//                int filas = matriz.length;
+//                int columnas = matriz[0].length;
+//
+//                int[][] transpuesta = new int[columnas][filas];
+//
+//                for (int i = 0; i < filas; i++) {
+//                    for (int j = 0; j < columnas; j++) {
+//                        transpuesta[j][i] = matriz[i][j];
+//                    }
+//                }
+//                //Ejercicio 8: Verificar Matriz Simétrica
+//                if( matriz == transpuesta ){
+//                    System.out.println("La matriz es simetrica");
+//                }else{ System.out.println("La matriz no es simetrica"); }
+//                return transpuesta;
+//            }
+//
+//            public static void imprimirMatriz(int[][] matriz) {
+//                int filas = matriz.length;
+//                int columnas = matriz[0].length;
+//
+//                for (int i = 0; i < filas; i++) {
+//                    for (int j = 0; j < columnas; j++) {
+//                        System.out.print(matriz[i][j] + "\n");
+//                    }
+//                    System.out.println();
+//                }
+
+        //Ejercicio 9: Contar coincidencias en un Array:
+
+//        int[] numeros = {1, 2, 3, 2};
+//
+//        int [] conteo = new int[numeros.length];
+//        for (int i = 0; i < numeros.length; i++) {
+//        int numero = numeros[i];
+//        conteo[numero]++;
+//        }
+//        for (int j = 0; j < conteo.length; j++) {
+//            if(conteo[j] > 0){
+//                System.out.println(j+" se repite "+conteo[j]+ " veces");
+//            }
+//        }
+
+        //Ejercicio 10: Invertir un Array
+
+//        int[] derecho = {1,2,3,4};
+//
+//
+//        int inicio = 0;
+//        int fin =derecho.length-1;
+//
+//        while (inicio < fin){
+//            int primero = derecho[inicio];
+//            derecho[inicio] = derecho[fin];
+//            derecho[fin] = primero;
+//
+//            inicio++;
+//            fin--;
+//        }
+//        System.out.println("[");
+//    for(int i = 0; i<derecho.length; i++){
+//    System.out.println(derecho[i]);
+//    if (i < derecho.length-1){
+//        System.out.println(",");
+//    }
+//}
+//    System.out.println("]");
         sc.close();
 }
 }
