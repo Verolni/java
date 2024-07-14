@@ -760,3 +760,61 @@ public class Main {
         sc.close();
 }
 }
+
+// taller Vehiculos
+// class Taller {
+//         public static void main(String[] args) {
+//             Scanner sc = new Scanner(System.in);
+    
+//             System.out.print("Ingrese la capacidad máxima del taller: ");
+//             int maximo = sc.nextInt();
+    
+//             if (maximo <= 0) {
+//                 System.out.println("La capacidad máxima debe ser mayor que cero.");
+//                 return;
+//             }
+            
+//             System.out.print("Ingrese el número de trabajos a registrar: ");
+//             int numTrabajos = sc.nextInt();
+    
+    
+//             if (numTrabajos > maximo) {
+//                 System.out.println("El número de trabajos no puede exceder la capacidad máxima del taller.");
+//                 return;
+//             }
+            
+//             String[][][] taller = new String[maximo][2][4]; 
+            
+//             for (int i = 0; i < numTrabajos; i++) {
+//                 sc.nextLine(); 
+    
+                
+//                 System.out.print("\nIngrese el nombre del empleado: ");
+//                 String nombreEmpleado = sc.nextLine();
+                
+//                 System.out.print("Ingrese el tipo de vehículo (Moto/Carro): ");
+//                 String tipoVStr = sc.nextLine().toLowerCase();
+//                 int tipo = tipoVStr.equals("moto") ? 0 : 1;
+                
+//                 System.out.print("Ingrese la marca: ");
+//                 String marca = sc.nextLine();
+                
+//                 System.out.print("Ingrese el modelo: ");
+//                 String modelo = sc.nextLine();
+    
+               
+//                 System.out.print("Ingrese el año: ");
+//                 String anio = sc.nextLine();
+                
+//                 System.out.print("Ingrese el estado (Pendiente, En reparación, Reparado): ");
+//                 String estado = sc.nextLine();
+    
+               
+//                 taller[i][tipo][0] = marca;
+//                 taller[i][tipo][1] = modelo;
+//                 taller[i][tipo][2] = anio;
+//                 taller[i][tipo][3] = estado;
+//             }
+    
+//         }
+//     }
